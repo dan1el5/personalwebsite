@@ -36,7 +36,7 @@ const About = () => {
                     </div>
 
                     <div className="aboutpic">
-                        <img src={aboutpic} style={{maxHeight: "500px"}} />
+                        <img src={aboutpic} style={{maxHeight: "500px"}} alt="" />
                     </div>
                 </div>
             </div>

@@ -4,7 +4,6 @@ import './App.css';
 
 // import components
 import Home from "./components/index"
-import NavBar from './components/Navbar';
 import About from './components/About'
 import Contact from './components/Contact'
 import Skills from './components/Skills'

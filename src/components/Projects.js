@@ -23,7 +23,7 @@ const Projects = () => {
                             <Card.Footer>
                                 <small className="text-muted">Python, Repl.it</small>
                                 <br />
-                                <a href="https://github.com/dan1el5/jammy" target="_blank" className="sourcecodetext">
+                                <a href="https://github.com/dan1el5/jammy" target="_blank" rel="noreferrer" className="sourcecodetext">
                                     <span className="red">&lt;</span> source code <span className="red">/&gt;</span>
                                 </a>
                             </Card.Footer>
@@ -40,7 +40,7 @@ const Projects = () => {
                             <Card.Footer>
                                 <small className="text-muted">HTML, CSS, Javascript</small>
                                 <br />
-                                <a href="https://github.com/dan1el5/hackville-2022" target="_blank" className="sourcecodetext">
+                                <a href="https://github.com/dan1el5/hackville-2022" target="_blank" rel="noreferrer" className="sourcecodetext">
                                     <span className="red">&lt;</span> source code <span className="red">/&gt;</span>
                                 </a>
                             </Card.Footer>
@@ -57,7 +57,7 @@ const Projects = () => {
                             <Card.Footer>
                                 <small className="text-muted">React, Node.js, Express.js, MongoDB</small>
                                 <br />
-                                <a href="https://github.com/dan1el5/WorkoutTracker" target="_blank" className="sourcecodetext">
+                                <a href="https://github.com/dan1el5/WorkoutTracker" target="_blank" rel="noreferrer" className="sourcecodetext">
                                     <span className="red">&lt;</span> source code <span className="red">/&gt;</span>
                                 </a>
                             </Card.Footer>

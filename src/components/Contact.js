@@ -1,7 +1,7 @@
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
 
@@ -21,7 +21,7 @@ const Contact = () => {
                     <a href="mailto:danielgomes056@gmail.com" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon className="iconstyling" icon={faEnvelope}/>
                     </a>
-                    <a href="https://twitter.com/dan1el_G" target="_blank" rel="noreferror">
+                    <a href="https://twitter.com/dan1el_G" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon className="iconstyling" icon={faTwitter}/>
                     </a>
                 </div>
