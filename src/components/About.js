@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div className="main">
             <div className="abouttext">
-                <p>My name is Daniel Gomes. I'm a 2nd year student at western university, specializing in computer science. I've been coding for about 5 years.</p>
+                <p>Hi, I'm Daniel Gomes. I'm a 2nd year student at western university, specializing in computer science. I've been coding for about 5 years.</p>
                 <p>I'm a developer at Western Developer's Society, and a business content creator at Western Tech Review.
                 I'm also an avid reader, and passionate about fitness. </p>
                 <p>A few of my skills are full stack development, digital marketing, investment analysis, and algorithm design.</p>

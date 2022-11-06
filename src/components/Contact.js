@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="main">
             <div>
                 <div className="contacttext">
-                    <h1>feel free to <span className="grey">contact</span> me!</h1>
+                    <h1>get in <span className="grey">touch.</span></h1>
                 </div>
                 <div className="icons">
                     <a href="https://github.com/dan1el5" target="_blank" rel="noreferrer">

@@ -8,8 +8,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const Projects = () => {
     return (
         <div className="main">
-            <div>
-                <p class="grey">click laptop for &lt; source code /&gt;</p>
+            <div className="projects">
                 <Carousel>
                     <Carousel.Item>
                         <a href="https://github.com/dan1el5/jammy" target="_blank" rel="noreferrer">
@@ -21,7 +20,7 @@ const Projects = () => {
                         </a>
                         <Carousel.Caption>
                             <h3>Jammy</h3>
-                            <p className="projdesc">Dicord bot for playing music. <br /> Built with discord.py and hosted on repl.it</p>
+                            <p className="projdesc">Dicord bot for playing music. <br /><span className="grey">discord.py, repl.it</span></p>
                         </Carousel.Caption>
                     </Carousel.Item>
 
@@ -35,7 +34,7 @@ const Projects = () => {
                         </a>
                         <Carousel.Caption>
                             <h3>StudyTips</h3>
-                            <p className="projdesc">Interactive website, suggesting study methods. <br/>Built with HTML, CSS, and JS. Also uses google maps api and a voice command api, alan ai.</p>
+                            <p className="projdesc">Interactive website, suggesting study methods. <br/><span className="grey">HTML, CSS, Javascript, google maps api, alan AI</span></p>
                         </Carousel.Caption>
                     </Carousel.Item>
 
@@ -49,7 +48,7 @@ const Projects = () => {
                         </a>
                         <Carousel.Caption>
                             <h3>Workout Tracker</h3>
-                            <p className="projdesc">Practice with the MERN stack. Stores info in database. <br />Built with MongoDB, Express.js, React, Node.js</p>
+                            <p className="projdesc">Practice with the MERN stack.<br /><span className="grey">MongoDB, Express.js, React, Node.js</span></p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

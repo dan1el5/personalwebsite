@@ -32,6 +32,10 @@
   to   { transform : translateY(0%) }
 }
 
+.grey {
+  color:#AEAEAE;
+}
+
 /* tsparticles */
 
 #tsparticles {
@@ -154,6 +158,7 @@
   width:50%;
   padding-bottom: 100px;
   transition: 1s all 0s ease;
+  background-color: #000000;
 }
 
 .projectimgs:hover {
@@ -168,8 +173,8 @@
 
 /* contact section */
 .iconstyling {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   margin: 30px;
   padding: 10px;
   color: white;
@@ -185,10 +190,6 @@
   transition: 1s all 0s ease;
   border-color: white;
   color:white;
-}
-
-.grey {
-  color:#AEAEAE;
 }
 
 
