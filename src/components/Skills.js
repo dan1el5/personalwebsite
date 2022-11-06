@@ -10,9 +10,8 @@ const Skills = () => {
     
     return (
         <div className="main">
-            <div className="skills">
+            <div>
                 <div>
-                    <h1 className="headerdesign">skills</h1>
                     <Container className="skillcontainer">
                         <h2 className="text">languages / frameworks</h2>
                         <Row>

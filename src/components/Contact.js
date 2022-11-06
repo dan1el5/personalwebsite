@@ -7,9 +7,9 @@ const Contact = () => {
 
     return (
         <div className="main">
-            <div className="contact">
+            <div>
                 <div className="contacttext">
-                    <h3>feel free to <span className="red">contact</span> me!</h3>
+                    <h1>feel free to <span className="grey">contact</span> me!</h1>
                 </div>
                 <div className="icons">
                     <a href="https://github.com/dan1el5" target="_blank" rel="noreferrer">

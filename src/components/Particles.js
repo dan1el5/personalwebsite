@@ -12,22 +12,22 @@ const ParticlesComponent = () => {
 
       particles: {
         number: {
-          value: 140
+          value: 80
         },
 
         move: {
           enable: true,
-          speed: {min:2, max:5}
+          speed: {min:1, max:1}
         },
 
         color: {
-          value: "e54140"
+          value: "525252"
         },
 
         links : {
           enable: true,
           distance: 150,
-          color: "e54140"
+          color: "525252"
         },
 
         shape: {

@@ -1,69 +1,58 @@
 import '../App.css';
-import Card from 'react-bootstrap/Card'
-import CardGroup from 'react-bootstrap/CardGroup';
 import jammybot from "../assets/jammybot.png"
 import studytips from "../assets/studytips.png"
 import wktrack from "../assets/wktrack.png"
 
+import Carousel from 'react-bootstrap/Carousel';
+
 const Projects = () => {
     return (
         <div className="main">
-            <div className="projects">
-                <h1 className="headerdesign">projects</h1>
-                <div className="projectcards">
-                    <CardGroup>
-                        <Card className='cardstyle'>
-                            <Card.Img variant="top" src={jammybot} />
-                            <Card.Body>
-                                <Card.Title>Jammy</Card.Title>
-                                <Card.Text>
-                                My favourite music bot was shut down, so I built a discord bot that takes commands and plays, pauses and resumes music. Built with the discord.py library and hosted on repl.it.
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">Python, Repl.it</small>
-                                <br />
-                                <a href="https://github.com/dan1el5/jammy" target="_blank" rel="noreferrer" className="sourcecodetext">
-                                    <span className="red">&lt;</span> source code <span className="red">/&gt;</span>
-                                </a>
-                            </Card.Footer>
-                        </Card>
+            <div>
+                <p class="grey">click laptop for &lt; source code /&gt;</p>
+                <Carousel>
+                    <Carousel.Item>
+                        <a href="https://github.com/dan1el5/jammy" target="_blank" rel="noreferrer">
+                            <img
+                                className="projectimgs"
+                                src={jammybot}
+                                alt="jammy"
+                            />
+                        </a>
+                        <Carousel.Caption>
+                            <h3>Jammy</h3>
+                            <p className="projdesc">Dicord bot for playing music. <br /> Built with discord.py and hosted on repl.it</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
-                        <Card className='cardstyle'>
-                            <Card.Img variant="top" src={studytips} />
-                            <Card.Body>
-                                <Card.Title>Study Tips</Card.Title>
-                                <Card.Text>
-                                Submission for Sheridan Hackville 2022. Shows students good ways to study, and makes use of the google maps api, as well as alan ai, a voice command api.
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">HTML, CSS, Javascript</small>
-                                <br />
-                                <a href="https://github.com/dan1el5/hackville-2022" target="_blank" rel="noreferrer" className="sourcecodetext">
-                                    <span className="red">&lt;</span> source code <span className="red">/&gt;</span>
-                                </a>
-                            </Card.Footer>
-                        </Card>
-                        
-                        <Card className='cardstyle'>
-                            <Card.Img variant="top" src={wktrack} />
-                            <Card.Body>
-                                <Card.Title>Workout Tracker</Card.Title>
-                                <Card.Text>
-                                Built using the MERN stack. Allows user input, and saves automatically.
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">React, Node.js, Express.js, MongoDB</small>
-                                <br />
-                                <a href="https://github.com/dan1el5/WorkoutTracker" target="_blank" rel="noreferrer" className="sourcecodetext">
-                                    <span className="red">&lt;</span> source code <span className="red">/&gt;</span>
-                                </a>
-                            </Card.Footer>
-                        </Card>
-                    </CardGroup>
-                </div>
+                    <Carousel.Item>
+                        <a href="https://github.com/dan1el5/hackville-2022" target="_blank" rel="noreferrer">
+                            <img
+                                className="projectimgs"
+                                src={studytips}
+                                alt="study tips"
+                            />
+                        </a>
+                        <Carousel.Caption>
+                            <h3>StudyTips</h3>
+                            <p className="projdesc">Interactive website, suggesting study methods. <br/>Built with HTML, CSS, and JS. Also uses google maps api and a voice command api, alan ai.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <a href="https://github.com/dan1el5/WorkoutTracker" target="_blank" rel="noreferrer">
+                            <img
+                                className="projectimgs"
+                                src={wktrack}
+                                alt="workout tracker"
+                            />
+                        </a>
+                        <Carousel.Caption>
+                            <h3>Workout Tracker</h3>
+                            <p className="projdesc">Practice with the MERN stack. Stores info in database. <br />Built with MongoDB, Express.js, React, Node.js</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
             </div>
         </div>
     );
