@@ -1,29 +1,72 @@
 import '../App.css';
-import img from '../assets/undraw.svg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faPencil } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { AiOutlineCheckCircle } from 'react-icons/ai'
+
+import me from '../assets/aboutpic.png'
 
 const About = () => {
 
     return (
         <div className="main">
-            <div className="abouttext">
-                <p>Hi, I'm Daniel Gomes. I'm a 2nd year student at western university, specializing in computer science. I've been coding for about 5 years.</p>
-                <p>I'm a developer at Western Developer's Society, and a business content creator at Western Tech Review.
-                I'm also an avid reader, and passionate about fitness. </p>
-                <p>A few of my skills are full stack development, digital marketing, investment analysis, and algorithm design.</p>
-                <a href="https://docs.google.com/document/d/1g9MQ46eUSAe-FJO3Z5f0EJcSfcFpCgPRn1G8n1K77Ns/edit?usp=sharing" target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon className="aboutbuttons" icon={faFile}/>
-                </a>
-                <a href="https://medium.com/@danielgomes056" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon className="aboutbuttons" icon={faPencil}/>
-                </a>
-            </div>
 
-            <div className="aboutcontent">
-                <img src={img} alt="logo" className="aboutimg"/>
+            <div className="about">
+
+                <div className="aboutleft">
+                    <h1 style={{fontWeight: 'bold'}}>Hey, I'm Dan.</h1>
+                    <br/>
+                    <p style={{fontSize: '20px'}}>
+                        I'm a university student, owner of a digital transformation agency, and I also create content. <br/><br/>
+                        I am driven by the pursuit of meaningful progress and the endless possibilities that come with conquering the self. <br/><br/>
+                        I'm especially interested in applying the results of personal development to achieve digital growth; establishing a brand, scaling a business, etc. <br/><br/>
+                        Combining those two areas, I attempt to use philosophy to create strong foundations for self development, and leverage technology to learn with intent and build cool things that help others.
+                    </p>
+
+                    <br/>
+                    
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px'}}>
+                    <AiOutlineCheckCircle />
+                    <span className="grey">&nbsp;&nbsp;&nbsp;Computer Science at Western University</span>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px'}}>
+                    <AiOutlineCheckCircle />
+                    <span className="grey">&nbsp;&nbsp;&nbsp;Co-Founder & CEO of Aurelis</span>
+                    </div>
+
+                    <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px'}}>
+                    <AiOutlineCheckCircle />
+                    <span className="grey">&nbsp;&nbsp;&nbsp;Self-Development Content Creator</span>
+                    </div>
+                </div>
+
+                <div className="aboutright">
+                    <img
+                        className="aboutimg"
+                        src={me}
+                        alt="dan"
+                    />
+                    <div>
+                        <a href="https://github.com/dan1el5" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon className="iconstyling" icon={faGithub}/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniel-gomes-6280951a3/" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon className="iconstyling" icon={faLinkedin}/>
+                        </a>
+                        <a href="https://twitter.com/eudanmonia" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon className="iconstyling" icon={faTwitter}/>
+                        </a>
+                        <a href="mailto:danielgomes056@gmail.com" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon className="iconstyling" icon={faEnvelope}/>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
+            
         </div>
     )
 }

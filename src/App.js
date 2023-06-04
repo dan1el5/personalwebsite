@@ -7,26 +7,23 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import components
 import Home from "./components/index"
-import About from './components/About'
-import Contact from './components/Contact'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
+import DevPortfolio from './components/DevPortfolio'
+import Resources from './components/Resources'
 import NavBar from "./components/NavBar"
-
-import ParticlesComponent from './components/Particles';
+import Newsletter from './components/Newsletter';
+import About from './components/About';
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <div className="App">
-        <ParticlesComponent id="tsparticles" />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/devportfolio" element={<DevPortfolio />} />
           <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,5 +1,4 @@
 .App {
-  height:calc(100vh - 80px);
   background-color: #000000;
   font-size: calc(5px + 2vmin);
   color: white;
@@ -9,16 +8,15 @@
   align-items: center;
   justify-content:center;
   text-align: left;
-  padding-bottom: 20px;
 }
 
-/* for all divs */
+/* applies to all pages */
 .main {
   animation: fadeIn 1s;
-  height: 700px;
-  width: 1200px;
+  width: 100%;
   position: relative;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -36,8 +34,7 @@
   color:#AEAEAE;
 }
 
-/* tsparticles */
-
+/* particles */
 #tsparticles {
   position: absolute;
   height: calc(100vh - 80px);
@@ -58,6 +55,11 @@
   min-height:80px;
 }
 
+.sig {
+  height:12%;
+  width:12%;
+}
+
 /* home section */
 .home {
   display:flex;
@@ -65,69 +67,266 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-bottom: 100px;
+  height: 100vh;
+  width: 100%;
 }
 
 .name {
   font-size: 72px;
 }
 
-.desc:after {
-  color: #AEAEAE;
-  content: 'developer';
-  animation-name: pulse;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
+.signature {
+  height: auto;
+  width: 10%;
 }
 
-@keyframes pulse {
-    0% {opacity: 0; content: "developer"}
-    25% {opacity: 1; content: "developer"}
-    40% {opacity: 0;}
-    75% {opacity: 1; content: "student"}
-    100% {opacity:0; content: "student"}
+.help {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  align-items: center;
+  padding-top: 150px;
 }
 
-/* about section */
-.abouttext {
-  position:absolute;
-  left:0;
-  width: 600px;
-  text-align: left;
+.horizontal-line {
+  width: 50%;
+  margin: 0 auto; /* Center the line horizontally */
+  border: none;
+  border-top: 2px solid white; /* Adjust thickness and color as desired */
 }
 
-.aboutcontent {
-  position:absolute;
-  right:0;
-  width: 600px;
-}  
-
-.aboutimg {
-  height:75%;
-  width:75%;
+.helppics {
+  height: 20%;
+  width: 20%;
+  margin-bottom: 50px;
 }
 
-.aboutbuttons {
-  height: 30px;
-  width: 100px;
-  margin: 30px;
-  padding: 10px;
+.methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.method {
+  flex: 1;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.method img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.method h3 {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.method p {
+  flex-grow: 1;
+  margin-bottom: 50px;
+}
+
+.filled-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
   color: white;
   border: 2px solid white;
-  border-radius: 20px;
-  background-color: #000000;
+  border-radius: 12px;
   text-decoration: none;
-  transition: 0.5s all 0s ease;
+  transition: background-color 0.7s;
+  width: fit-content;
 }
 
-.aboutbuttons:hover {
-  filter: drop-shadow(0 0 10px white);
-  transition: 0.5s all 0s ease;
-  border-color: white;
-  color:white;
+.filled-button:hover {
+  background-color: white;
+  color: black;
 }
 
-/* skills section */
+/* newsletter section */
+.newsletter {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.newsletterleft {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: left;
+  padding: 100px;
+  height: 100%;
+  width:50%;
+}
+
+.newsletterright {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
+  padding: 100px;
+  height: 100%;
+  width:50%;
+}
+
+.dpmock {
+  height:auto;
+  width:70%;
+  filter: drop-shadow(0 0 5px white);
+}
+
+/* resources section */
+.calendly {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendlyleft {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width:100%;
+  padding: 50px;
+}
+
+.calendlyright {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: right;
+  height: 100%;
+  width:100%;
+  padding:50px;
+}
+
+.calendlyimg {
+  height: auto;
+  width: 30%;
+}
+
+.habithandbook {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #000000;
+}
+
+.hhleft {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: left;
+  height: 100%;
+  width:100%;
+  padding:50px;
+}
+
+.hhright {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width:100%;
+}
+
+.hhimg {
+  height:auto;
+  width:50%;
+}
+
+.hh-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.7s;
+  width:fit-content;
+}
+
+.hh-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.discoverycall {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.discleft {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width:100%;
+  padding: 50px;
+}
+
+.discright {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: right;
+  height: 100%;
+  width:100%;
+  padding:50px;
+}
+
+.discimg {
+  height: auto;
+  width: 30%;
+}
+
+/* dev portfolio section */
+.skills {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .skillicons {
   border: 2px solid white;
   border-radius: 20px;
@@ -152,7 +351,16 @@
   text-align: center;
 }
 
-/* projects section */
+.projects {
+  height: 100vh;
+  width: 100%;
+  padding-top: 75px;
+}
+
+.projects h3 {
+  filter: drop-shadow(0 0 10px white);
+}
+
 .projectimgs {
   height:50%;
   width:50%;
@@ -171,7 +379,42 @@
 }
 
 
-/* contact section */
+/* about section */
+.about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutleft {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
+  height: 100%;
+  width:100%;
+  padding:100px;
+}
+
+.aboutright {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width:100%;
+}
+
+.aboutimg {
+  height:auto;
+  width:80%;
+  filter: drop-shadow(0 0 10px white);
+}
+
 .iconstyling {
   height: 20px;
   width: 20px;
