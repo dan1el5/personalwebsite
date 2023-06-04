@@ -1,10 +1,5 @@
 import '../App.css';
 
-/** about */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faPencil } from '@fortawesome/free-solid-svg-icons'
-import img from '../assets/undraw.svg'
-
 /** skills */
 import { Container, Row, Col } from 'react-bootstrap';
 import { DiReact, DiMongodb, DiPython, DiJava, DiHtml5, DiCss3, DiJavascript1, DiNodejs } from 'react-icons/di'
