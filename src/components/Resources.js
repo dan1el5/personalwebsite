@@ -15,7 +15,7 @@ const Resources = () => {
                 <div className="calendlyright">
                     <h2 style={{fontWeight: 'bold'}}>1 on 1 Call</h2>
                     <p>Book a call with me! <br/> I love exchanging ideas and perspectives with like minded people.</p>
-                    <a href='https://calendly.com/dangomes-chat/30min?month=2023-06' className="filled-button" target="_blank">
+                    <a href='https://calendly.com/dangomes-chat/30min?month=2023-06' className="filled-button" target="_blank" rel="noreferrer">
                             schedule a time
                     </a>
                 </div>
@@ -25,7 +25,7 @@ const Resources = () => {
                 <div className="hhleft">
                     <h2 style={{fontWeight: 'bold'}}>The Habit Handbook</h2>
                     <p>My free notion dashboard which dives into 10 habits that will help you reach your human potential.</p>
-                    <a href='https://dan-gomes.ck.page/0fdd5ff784' className="hh-button" target="_blank">
+                    <a href='https://dan-gomes.ck.page/0fdd5ff784' className="hh-button" target="_blank" rel="noreferrer">
                             grab the handbook
                     </a>
                 </div>
@@ -45,7 +45,7 @@ const Resources = () => {
                 <div className="discright">
                     <h2 style={{fontWeight: 'bold'}}>Aurelis Discovery Call</h2>
                     <p>Speak with me and the team about your digital needs - free of charge.</p>
-                    <a href='https://calendly.com/aurelis/15min' className="filled-button" target="_blank">
+                    <a href='https://calendly.com/aurelis/15min' className="filled-button" target="_blank" rel="noreferrer">
                             book a discovery call
                     </a>
                 </div>

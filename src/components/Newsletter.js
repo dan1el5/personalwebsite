@@ -24,7 +24,7 @@ const Newsletter = () => {
                         → Apply philosophical methods to improve character <br/>
                         → Leverage tech to learn intently and maximize output
                     </p>
-                    <a href='https://dangomes.substack.com/embed' className="filled-button" target="_blank">
+                    <a href='https://dangomes.substack.com/embed' className="filled-button" target="_blank" rel="noreferrer">
                             subscribe for free
                     </a>
                     <p style={{color: '#AEAEAE', fontStyle: 'italic', paddingTop: '30px'}}>5 minute read, delivered weekly.</p>

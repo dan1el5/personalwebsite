@@ -31,7 +31,7 @@ const Home = () => {
                         <BiEnvelope className="helppics" />
                         <h3>NEWSLETTER</h3>
                         <p>philosophy and tech driven personal development strategies - straight to your inbox.</p>
-                        <a href='https://dangomes.substack.com/' className="filled-button" target="_blank">
+                        <a href='https://dangomes.substack.com/' className="filled-button" target="_blank" rel="noreferrer">
                             check out the letter
                         </a>
                     </div>
@@ -40,7 +40,7 @@ const Home = () => {
                         <FaLinkedinIn className="helppics" />
                         <h3>LINKEDIN CONTENT</h3>
                         <p>insights on self-development, tech, and the creator economy.</p>
-                        <a href='https://www.linkedin.com/in/daniel-gomes-6280951a3/' className="filled-button" target="_blank">
+                        <a href='https://www.linkedin.com/in/daniel-gomes-6280951a3/' className="filled-button" target="_blank" rel="noreferrer">
                             read some content
                         </a>
                     </div>
@@ -49,7 +49,7 @@ const Home = () => {
                         <BiPlanet className="helppics" />
                         <h3>AURELIS</h3>
                         <p>my digital transformation agency - everything from custom software to content creation.</p>
-                        <a href='https://aurelisagency.com/' className="filled-button" target="_blank">
+                        <a href='https://aurelisagency.com/' className="filled-button" target="_blank" rel="noreferrer">
                             scroll through the site
                         </a>
                     </div>
