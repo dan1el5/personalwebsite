@@ -84,8 +84,11 @@
   width: 100%;
   height: 100vh;
   background-color: black;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: 150px;
+  justify-content: center;
+  text-align: center;
 }
 
 .horizontal-line {
@@ -354,7 +357,6 @@
 .projects {
   height: 100vh;
   width: 100%;
-  padding-top: 75px;
 }
 
 .projects h3 {
