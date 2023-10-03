@@ -1,7 +1,7 @@
 import '../App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
 
@@ -18,10 +18,11 @@ const About = () => {
                     <h1 style={{fontWeight: 'bold'}}>Hey, I'm Dan.</h1>
                     <br/>
                     <p style={{fontSize: '20px'}}>
-                        I'm a university student, owner of a digital transformation agency, and I also create content. <br/><br/>
-                        I am driven by the pursuit of meaningful progress and the endless possibilities that come with conquering the self. <br/><br/>
-                        I'm especially interested in applying the results of personal development to achieve digital growth; establishing a brand, scaling a business, etc. <br/><br/>
-                        Combining those two areas, I attempt to use philosophy to create strong foundations for self development, and leverage technology to learn with intent and build cool things that help others.
+                        I'm a computer science student, owner of a digital transformation agency, and I also create content. <br/><br/>
+                        I'm currently in my 3rd year at Western, pursuing an undergrad in computer science (which is going pretty well). <br/><br/>
+                        I started my agency in December 2022. Our main focus is enhancing digital presence for small businesses & creators.<br/><br/>
+                        I write content on LinkedIn about digital leverage, because I am obssessed with its potential. I also write a newsletter focused on self-development.<br/><br/>
+                        With the skills I've gained from these ventures, I'm aiming to enter the startup space in the near future.
                     </p>
 
                     <br/>
@@ -38,7 +39,7 @@ const About = () => {
 
                     <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px'}}>
                     <AiOutlineCheckCircle />
-                    <span className="grey">&nbsp;&nbsp;&nbsp;Self-Development Content Creator</span>
+                    <span className="grey">&nbsp;&nbsp;&nbsp;Content Creator</span>
                     </div>
                 </div>
 
@@ -52,11 +53,8 @@ const About = () => {
                         <a href="https://github.com/dan1el5" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon className="iconstyling" icon={faGithub}/>
                         </a>
-                        <a href="https://www.linkedin.com/in/daniel-gomes-6280951a3/" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/thedangomes/" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon className="iconstyling" icon={faLinkedin}/>
-                        </a>
-                        <a href="https://twitter.com/eudanmonia" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon className="iconstyling" icon={faTwitter}/>
                         </a>
                         <a href="mailto:danielgomes056@gmail.com" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon className="iconstyling" icon={faEnvelope}/>

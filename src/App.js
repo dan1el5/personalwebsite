@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import components
 import Home from "./components/index"
 import DevPortfolio from './components/DevPortfolio'
-import Resources from './components/Resources'
+import Agency from './components/Agency'
 import NavBar from "./components/NavBar"
 import Newsletter from './components/Newsletter';
 import About from './components/About';
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/newsletter" element={<Newsletter />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route path="/agency" element={<Agency />} />
           <Route path="/devportfolio" element={<DevPortfolio />} />
           <Route path="/about" element={<About />} />
         </Routes>

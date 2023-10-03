@@ -55,20 +55,35 @@
   min-height:80px;
 }
 
-.sig {
-  height:12%;
-  width:12%;
-}
-
 /* home section */
 .home {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
   align-items: center;
   height: 100vh;
   width: 100%;
+}
+
+.homeleft {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 100px;
+}
+
+.homeright {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
+  padding: 100px;
+  height: 100%;
 }
 
 .name {
@@ -77,7 +92,7 @@
 
 .signature {
   height: auto;
-  width: 10%;
+  width: 30%;
 }
 
 .help {
@@ -174,9 +189,9 @@
   justify-content: center;
   text-align: left;
   align-items: left;
-  padding: 100px;
   height: 100%;
   width:50%;
+  padding-left: 200px;
 }
 
 .newsletterright {
@@ -190,15 +205,15 @@
   width:50%;
 }
 
-.dpmock {
+.pathforgephone {
   height:auto;
-  width:70%;
+  width: 70%;
   filter: drop-shadow(0 0 5px white);
 }
 
-/* resources section */
-.calendly {
-  height: 40vh;
+/* agency section */
+.agency {
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -206,119 +221,32 @@
   justify-content: center;
 }
 
-.calendlyleft {
+.agencyleft {
   display:flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
   align-items: flex-start;
   height: 100%;
   width:100%;
-  padding: 50px;
+  padding-left:150px;
 }
 
-.calendlyright {
+.agencyright {
   display:flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  align-items: right;
-  height: 100%;
-  width:100%;
-  padding:50px;
-}
-
-.calendlyimg {
-  height: auto;
-  width: 30%;
-}
-
-.habithandbook {
-  height: 40vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: #000000;
-}
-
-.hhleft {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  align-items: left;
   height: 100%;
   width:100%;
-  padding:50px;
+  padding:100px;
 }
 
-.hhright {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100%;
-  width:100%;
+.aurelislogo {
+  filter: drop-shadow(0 0 5px white);
 }
 
-.hhimg {
-  height:auto;
-  width:50%;
-}
-
-.hh-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: black;
-  border: 2px solid black;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: background-color 0.7s;
-  width:fit-content;
-}
-
-.hh-button:hover {
-  background-color: black;
-  color: white;
-}
-
-.discoverycall {
-  height: 40vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.discleft {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  width:100%;
-  padding: 50px;
-}
-
-.discright {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  align-items: right;
-  height: 100%;
-  width:100%;
-  padding:50px;
-}
-
-.discimg {
-  height: auto;
-  width: 30%;
-}
 
 /* dev portfolio section */
 .skills {
@@ -414,7 +342,6 @@
 .aboutimg {
   height:auto;
   width:80%;
-  filter: drop-shadow(0 0 10px white);
 }
 
 .iconstyling {
@@ -438,4 +365,117 @@
 }
 
 
-
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column; /* Change to column on mobile */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: auto; /* Remove fixed height on mobile */
+    width: 100%;
+    padding: 20px; /* Adjust padding for better spacing on mobile */
+  }
+  
+  .homeleft, .homeright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px; /* Adjust padding for better spacing on mobile */
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit width on larger screens */
+  }
+  
+  .name {
+    font-size: 36px; /* Reduce font size on mobile */
+  }
+  
+  .signature {
+    height: auto;
+    width: 70%; /* Adjust width for better scaling on mobile */
+    max-width: 300px; /* Limit width on larger screens */
+    margin-top: 20px; /* Add some space on top on mobile */
+  }
+  
+  .help {
+    width: 100%;
+    padding: 20px; /* Adjust padding for better spacing on mobile */
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Change to column on mobile */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .horizontal-line {
+    width: 70%; /* Adjust line width on mobile */
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid white;
+    margin-bottom: 20px; /* Add some space below the line on mobile */
+  }
+  
+  .helppics {
+    height: 10%; /* Reduce image size on mobile */
+    width: 10%; /* Reduce image size on mobile */
+    margin-bottom: 20px; /* Add some space below images on mobile */
+  }
+  
+  .methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Adjust padding for better spacing on mobile */
+  }
+  
+  .method {
+    flex: 1;
+    padding: 20px; /* Adjust padding for better spacing on mobile */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .method img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px; /* Add some space below images on mobile */
+  }
+  
+  .method h3 {
+    margin-bottom: 10px; /* Reduce margin on mobile */
+    width: 100%;
+  }
+  
+  .method p {
+    flex-grow: 1;
+    margin-bottom: 20px; /* Add some space below paragraphs on mobile */
+  }
+  
+  .filled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.7s;
+    width: fit-content;
+  }
+  
+  .filled-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+}
