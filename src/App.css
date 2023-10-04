@@ -367,6 +367,7 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  /* home section */
   .home {
     display: flex;
     flex-direction: column; /* Change to column on mobile */
@@ -385,8 +386,15 @@
     text-align: center;
     align-items: center;
     padding: 20px; /* Adjust padding for better spacing on mobile */
+    padding-bottom: 100px;
     width: 100%; /* Full width on mobile */
     max-width: 300px; /* Limit width on larger screens */
+  }
+
+  .homeright img {
+    width: 100%; /* Set the width to 100% to make the image responsive */
+    max-width: 400px; /* Set a maximum width for the image */
+    height: auto; /* Allow the height to adjust proportionally */
   }
   
   .name {
@@ -420,8 +428,8 @@
   }
   
   .helppics {
-    height: 10%; /* Reduce image size on mobile */
-    width: 10%; /* Reduce image size on mobile */
+    height: 30%; /* Reduce image size on mobile */
+    width: 30%; /* Reduce image size on mobile */
     margin-bottom: 20px; /* Add some space below images on mobile */
   }
   
@@ -458,6 +466,7 @@
   
   .method p {
     flex-grow: 1;
+
     margin-bottom: 20px; /* Add some space below paragraphs on mobile */
   }
   
@@ -477,5 +486,125 @@
     background-color: white;
     color: black;
   }
+
+  /* agency section */
+  .agency {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .agencyleft,
+  .agencyright {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .agencyleft {
+    padding-top: 20px; /* Adjust as needed to create space */
+  }
+
+  .aurelislogo {
+    width: 80%;
+  }
+
+  /* newsletter section */
+  .newsletter {
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Allow content to expand naturally */
+    align-items: center;
+  }
+
+  .newsletterleft,
+  .newsletterright {
+    width: 100%; /* Expand content to full width */
+    text-align: left;
+    align-items: center;
+    padding: 20px; /* Add some padding for better spacing */
+  }
+
+  .pathforgephone {
+    width: 90%; /* Reduce the width of the image */
+    max-width: 300px; /* Set a maximum width for the image */
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  .img-mobile-padding {
+    padding-bottom: 100px;
+    width: 100%; /* Set the width to 100% for full-width on mobile */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Define a maximum width for the image */
+  }
   
+  /* dev portfolio section */
+  .skills {
+    height: auto; /* Remove fixed height for mobile responsiveness */
+    padding: 100px; /* Add padding for spacing */
+  }
+  
+  .skillicons {
+    height: 50px;
+    width: 100px;
+    margin: 20px
+  }
+  
+  .projects {
+    height: auto; /* Remove fixed height for mobile responsiveness */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .projectimgs {
+    height: auto;
+    width: 100%;
+    padding-bottom: 250px; /* Reduce padding for spacing */
+  }
+  
+  .projdesc {
+    font-size: 16px; /* Adjust font size for readability on mobile */
+  }
+
+  /* about section */
+  .about {
+    height: auto; /* Remove fixed height for mobile responsiveness */
+    padding: 20px; /* Add padding for spacing */
+    flex-direction: column; /* Change flex-direction for mobile */
+    align-items: center;
+  }
+  
+  .aboutleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: left; /* Center text for mobile */
+    width: 100%; /* Occupy full width on mobile */
+    padding: 20px; /* Adjust padding for spacing */
+  }
+  
+  .aboutright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Occupy full width on mobile */
+    padding: 20px; /* Adjust padding for spacing */
+  }
+  
+  .aboutimg {
+    height: auto;
+    width: 70%; /* Adjust image width for mobile */
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  .iconstyling {
+    height: 20px;
+    width: 20px;
+    margin: 10px; /* Reduce margin for spacing */
+    padding: 10px;
+    border-radius: 50%; /* Make the icons circular */
+  }
 }

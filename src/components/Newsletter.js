@@ -11,7 +11,8 @@ const Newsletter = () => {
         <div className="main">
 
             <img
-                style={{ width: '50%', height: '50%', paddingTop: '100px', marginBottom: '-100px' }} 
+                className="img-mobile-padding"
+                style={{ width: '60%', height: '60%', paddingTop: '100px', marginBottom: '-100px' }} 
                 src={pathforgeBanner}
                 alt="PathForge"
             />

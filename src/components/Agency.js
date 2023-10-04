@@ -22,7 +22,7 @@ const Agency = () => {
 
                         <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px'}}>
                         <AiOutlineCheckCircle />
-                        <span className="grey">&nbsp;&nbsp;&nbsp;Comprehensive Social Media Management</span>
+                        <span className="grey">&nbsp;&nbsp;&nbsp;Social Media Management</span>
                         </div>
 
                         <div style={{ display: 'flex', alignItems: 'center', paddingBottom: '10px'}}>
