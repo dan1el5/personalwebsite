@@ -29,7 +29,7 @@ const Newsletter = () => {
                 <div className="newsletterright">
                     <h1 style={{fontWeight: 'bold', paddingBottom: '10px'}}>PathForge Newsletter</h1>
                     <p style={{color: '#AEAEAE', paddingBottom: '30px'}}>
-                        Using the lessons that the past 2 years of rigorous self-development have taught me, I'll show you how to start forging your own unique path in life (instead of spending your existence following one without question or purpose).<br/><br/>
+                        Want to learn how to leverage the internet to achieve your goals? That's what I'm trying to do, and I'll teach you what I learn along the way.<br/><br/>
                         → Develop the skills needed for actual growth <br/>
                         → Leverage the internet to build meaningful projects <br/>
                         → Forge a new, unique path into existence
