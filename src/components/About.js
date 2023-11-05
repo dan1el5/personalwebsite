@@ -21,7 +21,7 @@ const About = () => {
                         I'm a computer science student, owner of a digital transformation agency, and I also create content. <br/><br/>
                         I'm currently in my 3rd year at Western, pursuing an undergrad in computer science (which is going pretty well). <br/><br/>
                         I started my agency in December 2022. Our main focus is enhancing digital presence for small businesses & creators.<br/><br/>
-                        I write content on LinkedIn about digital leverage, because I am obssessed with its potential. I also write a newsletter focused on self-development.<br/><br/>
+                        I write content on LinkedIn about digital leverage, because I am obssessed with its potential. I also write a newsletter focused on digital leverage.<br/><br/>
                         With the skills I've gained from these ventures, I'm aiming to enter the startup space in the near future.
                     </p>
 
